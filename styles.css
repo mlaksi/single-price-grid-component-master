@@ -11,6 +11,7 @@ body {
     margin: 5rem auto;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 2px 2px 8px rgb(230, 225, 225);
 }
 
 #grid-first {
@@ -30,6 +31,7 @@ body {
 
 #grid-first>p {
     color: hsl(218, 22%, 67%);
+    line-height: 2;
 }
 
 #grid-second {
@@ -73,6 +75,12 @@ body {
     text-align: center;
     padding: 1rem 4rem;
     border-radius: 8px;
+    box-shadow: hsl(218, 22%, 67%);
+}
+
+#grid-second>a:hover {
+    background-color: hsl(71, 100%, 48%);
+    transition-delay: 0.1s;
 }
 
 #grid-third {

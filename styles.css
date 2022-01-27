@@ -1,0 +1,105 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+#grid-wrapper {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#grid-first {
+    grid-column: 1/3;
+    background-color: white;
+    padding: 1rem 3rem;
+}
+
+#grid-first>h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+#grid-first>h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+#grid-first>p {
+    color: hsl(218, 22%, 67%);
+}
+
+#grid-second {
+    color: white;
+    background-color: hsl(179, 62%, 43%);
+    padding: 1rem 3rem;
+}
+
+#mini-flex {
+    display: flex;
+}
+
+#price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0.75rem 0 0;
+}
+
+#price>p {
+    margin: 0;
+}
+
+#price-info {
+    align-self: center;
+    color: hsl(204, 43%, 93%);
+}
+
+#price-info>p {
+    margin: 0;
+}
+
+#grid-second>p {
+    margin-bottom: 2rem;
+}
+
+#grid-second>a {
+    color: white;
+    text-decoration: none;
+    background-color: hsl(71, 73%, 54%);
+    display: block;
+    text-align: center;
+    padding: 1rem 4rem;
+    border-radius: 8px;
+}
+
+#grid-third {
+    color: white;
+    background-color: rgba(74, 190, 189, 255);
+    padding: 1rem 3rem;
+}
+
+#grid-third>ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    color: hsl(204, 43%, 93%);
+}
+
+#grid-third li {
+    margin: 0.3em;
+}
+
+@media screen and (max-width:400px) {
+    #grid-wrapper {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    #grid-first {
+        grid-column: 1/2;
+    }
+}
